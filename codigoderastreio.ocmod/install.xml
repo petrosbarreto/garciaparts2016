@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+	<name>Rastreamento Correios</name>
+	<code>Rastreametno COrreios</code>
+	<version>1.0.0</version>
+	<author>César Henrique</author>
+	<link>http://www.mdemidia.com.br</link>
+
+	<file path="catalog/view/theme/*/template/account/order_info.tpl">
+		<operation>
+			<search position="replace"><![CDATA[ <td class="text-left"><?php echo $history['comment']; ?></td> ]]></search>
+			<add><![CDATA[
+			<?php if($history['status'] == 'Código de Rastreio'){ ?>
+			<td class="text-left"><a href="//websro.correios.com.br/sro_bin/txect01$.Inexistente?P_LINGUA=001&P_TIPO=002&P_COD_LIS=<?php echo $history['comment']; ?>" target="_blank"><?php echo $history['comment']; ?></a></td>
+			<?php } else { ?>
+			<td class="text-left"><?php echo $history['comment']; ?></td>
+			<?php } ?>
+			]]></add>
+		</operation>
+		</file>
+</modification>

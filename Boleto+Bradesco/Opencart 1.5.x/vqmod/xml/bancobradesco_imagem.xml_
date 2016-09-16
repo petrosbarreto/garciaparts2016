@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modification>
+	<id>
+		<![CDATA[Imagem Boleto Banco Bradesco]]>
+	</id>
+	<version>
+		<![CDATA[1.0]]>
+	</version>
+	<vqmver>
+		<![CDATA[2.4.1]]>
+	</vqmver>
+	<author>
+		<![CDATA[Rogerio Alan Dobler - rogerioalandobler@hotmail.com]]>
+	</author>
+	<file path="catalog/model/payment/" name="bancobradesco.php">
+		<operation>
+			<search position="replace"> 
+				<![CDATA[
+				$this->config->get('bancobradesco_nome'),
+				]]>
+			</search>
+			<add>
+				<![CDATA[
+				'<img src="image/boleto/boleto_bradesco.png" alt="Boleto Banco Bradesco" title="Boleto Banco Bradesco" />',
+				]]>
+			</add>
+		</operation>
+
+
+	</file>
+</modification>

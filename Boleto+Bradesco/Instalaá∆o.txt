@@ -1,0 +1,9 @@
+Intalação
+----------
+
+1 - enviar via ftp as pastas em anexo a pasta principal e sua opencart, ao pedir para subistituir cliente em sim.
+2 - em admin > extenções > meios de pagamentos, localizar e ativar o modulo, feito isso configure de acordo os seus dados bancarios.
+3 - em admin > extenções > totais do pedido, localize e ative o addon de desconto, lembre-se de colocar o mesmo na ordem correta, ou seja a ordem do mesmo deve ser apos Subtotal para dar desconto apenas nos valores de produtos, e Apos subtotal e Valor do Frete para o desconto ser aplicado tambem ao frete.
+
+
+Dúvidas/Suporte: Entre em contato pelo e-mail rogerioalandobler@hotmail.com

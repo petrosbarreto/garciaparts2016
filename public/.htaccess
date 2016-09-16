@@ -1,0 +1,12 @@
+#AuthUserFile /srv/httpd/intimussexy.com.br/intimussexy/public/.htpasswd
+#AuthType Basic
+#AuthName "Restrito"
+#Require valid-user
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)\?*$ index.php?_route_=$1 [L,QSA]
+
+
